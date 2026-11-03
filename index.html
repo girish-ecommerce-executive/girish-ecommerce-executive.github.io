@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--
+    ============================================================
+    Girish Kumar Gupta – Portfolio Website
+    Structure/layout inspiration (reference site):
+    https://manish-data-analyst.github.io/
+    ============================================================
+  -->
+
+  <!-- ========== SEO ========== -->
+  <title>Girish Kumar Gupta | E-commerce Executive &amp; Shopify Specialist</title>
+  <meta name="description" content="Portfolio of Girish Kumar Gupta – E-commerce Executive specializing in Shopify product listing, SEO-friendly product content, product data management and e-commerce operations." />
+  <meta name="keywords" content="Girish Kumar Gupta, E-commerce Executive, Shopify, Product Listing, Product Data Management, SEO Product Content, Matrixify, E-commerce Operations" />
+  <meta name="author" content="Girish Kumar Gupta" />
+  <meta name="theme-color" content="#4338ca" />
+
+  <!-- ========== Open Graph (social sharing) ========== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Girish Kumar Gupta | E-commerce Executive" />
+  <meta property="og:description" content="Shopify product listing, SEO-friendly content and e-commerce operations specialist." />
+  <!-- TODO: after publishing, replace with your real URLs -->
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/" />
+  <meta property="og:image" content="assets/images/profile-placeholder.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- ========== Favicon placeholder (replace assets/images/favicon.png with your own) ========== -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234338ca'/%3E%3Ctext x='50' y='66' font-size='54' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EG%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts & icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Loading animation (hidden by script.js once the page loads) -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-ring"></div>
+    <span>GKG</span>
+  </div>
+
+  <a class="skip-link" href="#home">Skip to main content</a>
+
+  <!-- ===================== 1. NAVIGATION ===================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Girish Kumar Gupta – Home">
+        <span class="logo-mark">G</span>
+        <span class="logo-text">Girish<span>.</span></span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== 2. HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="grid-overlay"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="hero-hello"><span class="wave">👋</span> Hello, I'm</p>
+          <h1 class="hero-name">Girish Kumar Gupta</h1>
+          <p class="hero-title">E-commerce Executive | Shopify Product Listing &amp; E-commerce Operations Specialist</p>
+          <p class="hero-intro">
+            I am an E-commerce professional with experience in product listing, Shopify store management, product data management, SEO-friendly content, and e-commerce backend operations. I focus on creating accurate, professional, and optimized product information that helps improve online store organization and customer experience.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-briefcase"></i> View My Work</a>
+            <!-- RESUME: replace assets/resume.pdf with your real resume (keep the same file name) -->
+            <a href="assets/resume.pdf" class="btn btn-outline" download><i class="fa-solid fa-download"></i> Download Resume</a>
+            <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-image reveal">
+          <div class="photo-frame">
+            <!-- PROFILE IMAGE: replace assets/images/profile-placeholder.jpg with your photo
+                 (same name) OR change the src below, e.g. assets/images/girish.jpg -->
+            <img src="assets/images/profile-placeholder.jpg" alt="Portrait of Girish Kumar Gupta" width="420" height="420" />
+          </div>
+          <div class="float-badge badge-1"><i class="fa-brands fa-shopify"></i> Shopify</div>
+          <div class="float-badge badge-2"><i class="fa-solid fa-magnifying-glass-chart"></i> SEO</div>
+          <div class="float-badge badge-3"><i class="fa-solid fa-table"></i> Data</div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll to About section"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <!-- ===================== 3. ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I am an aspiring and growing E-commerce Executive with experience in managing product listings, product information, Shopify backend operations, and e-commerce data.</p>
+            <p>My work involves creating SEO-friendly product titles, professional product descriptions, feature lists, product specifications, metafields, and organized product data.</p>
+            <p>I am interested in growing my career in E-commerce Operations, Digital Merchandising, Product Management, and Shopify store management.</p>
+          </div>
+
+          <div class="info-cards">
+            <article class="info-card reveal">
+              <span class="icon-box"><i class="fa-solid fa-user-tie"></i></span>
+              <div><h3>Role</h3><p>E-commerce Executive</p></div>
+            </article>
+            <article class="info-card reveal">
+              <span class="icon-box"><i class="fa-brands fa-shopify"></i></span>
+              <div><h3>Specialization</h3><p>Shopify &amp; Product Listing</p></div>
+            </article>
+            <article class="info-card reveal">
+              <span class="icon-box"><i class="fa-solid fa-gears"></i></span>
+              <div><h3>Experience</h3><p>E-commerce Operations</p></div>
+            </article>
+            <article class="info-card reveal">
+              <span class="icon-box"><i class="fa-solid fa-language"></i></span>
+              <div><h3>Languages</h3><p>Hindi and English</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. SKILLS ===================== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">What I do</span>
+          <h2 class="section-title">Skills &amp; Expertise</h2>
+        </header>
+
+        <div class="skills-grid">
+          <!-- E-commerce Skills -->
+          <article class="skill-group reveal">
+            <h3 class="skill-group-title"><i class="fa-solid fa-cart-shopping"></i> E-commerce Skills</h3>
+            <ul class="skill-list">
+              <li class="skill-item"><i class="fa-brands fa-shopify"></i> Shopify Product Listing</li>
+              <li class="skill-item"><i class="fa-solid fa-cloud-arrow-up"></i> Product Uploading</li>
+              <li class="skill-item"><i class="fa-solid fa-database"></i> Product Data Management</li>
+              <li class="skill-item"><i class="fa-solid fa-server"></i> E-commerce Backend Management</li>
+              <li class="skill-item"><i class="fa-solid fa-boxes-stacked"></i> Product Catalog Management</li>
+              <li class="skill-item"><i class="fa-solid fa-store"></i> Digital Merchandising</li>
+            </ul>
+          </article>
+
+          <!-- Content & SEO Skills -->
+          <article class="skill-group reveal">
+            <h3 class="skill-group-title"><i class="fa-solid fa-pen-nib"></i> Content &amp; SEO Skills</h3>
+            <ul class="skill-list">
+              <li class="skill-item"><i class="fa-solid fa-heading"></i> SEO-Friendly Product Titles</li>
+              <li class="skill-item"><i class="fa-solid fa-align-left"></i> Product Descriptions</li>
+              <li class="skill-item"><i class="fa-solid fa-list-check"></i> Product Features</li>
+              <li class="skill-item"><i class="fa-solid fa-ruler-combined"></i> Product Specifications</li>
+              <li class="skill-item"><i class="fa-solid fa-tags"></i> Product Metafields</li>
+              <li class="skill-item"><i class="fa-solid fa-chart-line"></i> Product Content Optimization</li>
+            </ul>
+          </article>
+
+          <!-- Data & Tools -->
+          <article class="skill-group reveal">
+            <h3 class="skill-group-title"><i class="fa-solid fa-screwdriver-wrench"></i> Data &amp; Tools</h3>
+            <ul class="skill-list">
+              <li class="skill-item"><i class="fa-solid fa-file-excel"></i> Microsoft Excel</li>
+              <li class="skill-item"><i class="fa-solid fa-table-cells"></i> Google Sheets</li>
+              <li class="skill-item"><i class="fa-solid fa-keyboard"></i> Data Entry</li>
+              <li class="skill-item"><i class="fa-solid fa-magnifying-glass"></i> Product Research</li>
+              <li class="skill-item"><i class="fa-solid fa-file-import"></i> Matrixify</li>
+              <li class="skill-item"><i class="fa-solid fa-file-csv"></i> CSV Management</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. EXPERIENCE ===================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">My journey</span>
+          <h2 class="section-title">Work Experience</h2>
+        </header>
+
+        <div class="timeline">
+          <!-- EXPERIENCE 1: update the dates / details below -->
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"><i class="fa-solid fa-briefcase"></i></span>
+            <div class="timeline-card">
+              <span class="timeline-date">Month YYYY – Present</span> <!-- EDIT DATES -->
+              <h3>SchoolOutlet</h3>
+              <p class="timeline-role">E-commerce / Product Listing &amp; Backend Management</p>
+              <ul class="check-list">
+                <li>Managing and creating professional product listings.</li>
+                <li>Writing SEO-friendly product titles.</li>
+                <li>Creating detailed product descriptions.</li>
+                <li>Organizing product specifications and metafields.</li>
+                <li>Managing product information and backend data.</li>
+                <li>Supporting Shopify product uploads and catalog management.</li>
+                <li>Maintaining accurate and organized e-commerce product data.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- EXPERIENCE 2: update the dates / details below -->
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"><i class="fa-solid fa-magnifying-glass-chart"></i></span>
+            <div class="timeline-card">
+              <span class="timeline-date">Month YYYY – Month YYYY</span> <!-- EDIT DATES -->
+              <h3>Eminenture</h3>
+              <p class="timeline-role">Research Associate</p>
+              <ul class="check-list">
+                <li>Conducting primary and secondary research.</li>
+                <li>Collecting and organizing research data.</li>
+                <li>Analyzing information and preparing structured reports.</li>
+                <li>Supporting research and data-related projects.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. PROJECTS ===================== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Selected work</span>
+          <h2 class="section-title">Projects &amp; Portfolio</h2>
+        </header>
+
+        <!--
+          PROJECT IMAGES: each card has a ".project-thumb" block with an icon placeholder.
+          To use a real image, replace the <div class="project-thumb">…</div> contents with:
+          <img src="assets/images/your-project.jpg" alt="Project name" loading="lazy" />
+          VIEW PROJECT: change href="#" to your project / case-study link.
+        -->
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-1"><i class="fa-brands fa-shopify"></i></div>
+            <div class="project-body">
+              <h3>Shopify Product Listing Management</h3>
+              <p>Managing and organizing product listings with professional titles, descriptions, specifications, and product information.</p>
+              <ul class="tags"><li>Shopify</li><li>Listing</li><li>Content</li></ul>
+              <a href="#" class="btn btn-small" data-project>View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-2"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <div class="project-body">
+              <h3>SEO Product Content Optimization</h3>
+              <p>Creating SEO-friendly product titles and descriptions designed to improve product discoverability and presentation.</p>
+              <ul class="tags"><li>SEO</li><li>Copywriting</li><li>Optimization</li></ul>
+              <a href="#" class="btn btn-small" data-project>View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-3"><i class="fa-solid fa-tags"></i></div>
+            <div class="project-body">
+              <h3>Product Metafield Management</h3>
+              <p>Organizing important product specifications such as dimensions, materials, age groups, and other structured product data.</p>
+              <ul class="tags"><li>Metafields</li><li>Specifications</li><li>Shopify</li></ul>
+              <a href="#" class="btn btn-small" data-project>View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-4"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <div class="project-body">
+              <h3>E-commerce Product Catalog Management</h3>
+              <p>Managing large product catalogs and maintaining accurate, organized, and consistent product information.</p>
+              <ul class="tags"><li>Catalog</li><li>Data Quality</li><li>Operations</li></ul>
+              <a href="#" class="btn btn-small" data-project>View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-5"><i class="fa-solid fa-file-csv"></i></div>
+            <div class="project-body">
+              <h3>CSV and Bulk Product Upload</h3>
+              <p>Working with product data files and structured CSV information for efficient product management.</p>
+              <ul class="tags"><li>CSV</li><li>Matrixify</li><li>Excel</li></ul>
+              <a href="#" class="btn btn-small" data-project>View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-6"><i class="fa-solid fa-database"></i></div>
+            <div class="project-body">
+              <h3>Product Research and Data Management</h3>
+              <p>Researching product information and organizing data into structured and usable formats.</p>
+              <ul class="tags"><li>Research</li><li>Google Sheets</li><li>Data Entry</li></ul>
+              <a href="#" class="btn btn-small" data-project>View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. EDUCATION ===================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Academic background</span>
+          <h2 class="section-title">Education</h2>
+        </header>
+
+        <!-- EDUCATION: edit the text/dates in each .timeline-date and heading below -->
+        <div class="timeline timeline-compact">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></span>
+            <div class="timeline-card">
+              <span class="timeline-date">Currently Pursuing · 3rd Year</span>
+              <h3>IGNOU</h3>
+              <p class="timeline-role">Bachelor's Degree</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"><i class="fa-solid fa-school"></i></span>
+            <div class="timeline-card">
+              <span class="timeline-date">Completed in 2024</span>
+              <h3>CBSE</h3>
+              <p class="timeline-role">Class 12</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"><i class="fa-solid fa-book-open"></i></span>
+            <div class="timeline-card">
+              <span class="timeline-date">Completed in 2022</span>
+              <h3>CBSE</h3>
+              <p class="timeline-role">Class 10</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 8. RESUME ===================== -->
+    <section class="section section-alt" id="resume">
+      <div class="container">
+        <div class="resume-card reveal">
+          <span class="resume-icon"><i class="fa-solid fa-file-pdf"></i></span>
+          <h2 class="section-title">My Resume</h2>
+          <p>Download my resume to learn more about my professional experience, skills, education, and e-commerce expertise.</p>
+          <!-- RESUME PDF: put your resume at assets/resume.pdf (replace the placeholder file) -->
+          <a href="assets/resume.pdf" class="btn btn-primary btn-large" download="Girish-Kumar-Gupta-Resume.pdf">
+            <i class="fa-solid fa-download"></i> Download My Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 9. CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Get in touch</span>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-sub">I am always interested in new opportunities related to E-commerce, Shopify, Product Management, Digital Merchandising, and E-commerce Operations.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <!-- CONTACT LINKS: replace the placeholder hrefs/text with your real details -->
+            <a class="contact-item" href="mailto:your-email@example.com" id="contact-email">
+              <span class="icon-box"><i class="fa-solid fa-envelope"></i></span>
+              <div><h3>Email</h3><p>your-email@example.com</p></div> <!-- ADD YOUR REAL EMAIL (here and in href) -->
+            </a>
+            <a class="contact-item" href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener noreferrer">
+              <span class="icon-box"><i class="fa-brands fa-linkedin-in"></i></span>
+              <div><h3>LinkedIn</h3><p>linkedin.com/in/your-linkedin-id</p></div> <!-- ADD YOUR LINKEDIN URL -->
+            </a>
+            <a class="contact-item" href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+              <span class="icon-box"><i class="fa-brands fa-github"></i></span>
+              <div><h3>GitHub</h3><p>github.com/your-github-username</p></div> <!-- ADD YOUR GITHUB URL -->
+            </a>
+          </div>
+
+          <!--
+            CONTACT FORM – connect to Formspree later:
+            1. Create a free form at https://formspree.io and copy its endpoint.
+            2. Replace data-endpoint="" below with it, e.g.
+               data-endpoint="https://formspree.io/f/abcdwxyz"
+            With an endpoint set, script.js sends the form via fetch().
+            Without one, it validates and shows a demo success message.
+          -->
+          <form class="contact-form reveal" id="contact-form" data-endpoint="" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+                <small class="error" aria-live="polite"></small>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+                <small class="error" aria-live="polite"></small>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="How can I help you?" required />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message…" required></textarea>
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 10. FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h3 class="footer-name">Girish Kumar Gupta</h3>
+        <p class="footer-role">E-commerce Executive | Shopify &amp; E-commerce Operations Specialist</p>
+      </div>
+      <!-- SOCIAL LINKS: replace each "#" with your profile URL -->
+      <ul class="socials" aria-label="Social media">
+        <li><a href="https://www.linkedin.com/in/your-linkedin-id" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/your-github-username" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="mailto:your-email@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a></li>
+      </ul>
+    </div>
+    <p class="copyright">&copy; 2026 Girish Kumar Gupta. All Rights Reserved.</p>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
